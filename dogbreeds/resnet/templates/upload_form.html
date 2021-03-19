@@ -1,0 +1,14 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <title>Dog Breed Classifier</title> 
+</head> 
+<body> 
+    <h1>Upload image of a Dog</h1>
+    <form method="post" enctype="multipart/form-data" action="model">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="Submit">Upload</button>
+    </form></body> 
+</html> 
